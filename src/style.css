@@ -1,61 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap");
 body {
-  background-color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #7b7b7b;
+  margin: 0;
+  padding: 0;
 }
 
-body #header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: header;
+header {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: #fff5e9;
+  font-size: 20px;
+  z-index: 2;
 }
 
-body #main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: main;
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
-body #grid-container {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header header"  "main main";
+p {
+  margin: 0 0 10px 0;
 }
 
-body #header {
-  width: 100%;
-  background-color: rgba(112, 128, 144, 0.15);
+.clip-svg {
+  width: 0;
+  height: 0;
 }
 
-body ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.img-clip-block {
+  font-family: 'Cuprum', sans-serif;
+  margin: 20px 0;
 }
 
-body li {
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: rgba(112, 128, 144, 0.15);
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+.img-clip-row {
+  text-align: center;
 }
 
-body li a {
+.img-clip-row:first-of-type .img-clip-wrap {
+  background-position: top;
+}
+
+.img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(odd) {
+  background-position: left;
+}
+
+.img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(even) {
+  background-position: right;
+}
+
+.img-clip-row:last-of-type .img-clip-wrap {
+  background-position: bottom;
+}
+
+.img-clip-wrap {
+  width: 300px;
+  height: 300px;
+  background-image: url("flowers.jpg");
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-  text-decoration: none;
-  color: white;
+  position: relative;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-clip-path: url("#clip-diamond");
+          clip-path: url("#clip-diamond");
 }
 
-body li a:hover {
-  background-color: gray;
+.overlay {
+  background: rgba(255, 245, 233, 0.8);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
-body li a:active {
-  background-color: red;
+.overlay-content {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 400;
+  font-size: 180%;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.img-clip-wrap:hover .overlay {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  background: none;
+}
+
+.img-clip-img {
+  display: block;
+}
+
+@media only screen and (min-width: 650px) {
+  .img-clip-row {
+    margin-top: -154px;
+  }
+  .img-clip-row:first-of-type {
+    margin-top: auto;
+  }
+  .img-clip-wrap {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

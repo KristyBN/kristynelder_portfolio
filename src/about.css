@@ -19,6 +19,7 @@ nav {
   -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 15;
 }
 
 nav ul {
@@ -105,9 +106,6 @@ a:hover {
 }
 
 .contactcard {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 320px;
   width: 428px;
   overflow: hidden;
@@ -252,11 +250,13 @@ a:hover {
 .container {
   position: absolute;
   text-align: justify;
-  bottom: 1em;
+  bottom: 0;
+  width: 100%;
   color: #2a2b39;
   font-weight: 300;
   padding: .4em;
   background: white;
+  z-index: 7;
 }
 
 /* Hover animation */
@@ -293,5 +293,16 @@ a:hover {
 .flip:hover .front .contact {
   -webkit-transform: translateY(-52%);
           transform: translateY(-52%);
+}
+
+@media only screen and (max-width: 315px) {
+  .contactcard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 300px;
+    width: 408px;
+    overflow: scroll;
+  }
 }
 /*# sourceMappingURL=about.css.map */

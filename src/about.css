@@ -1,4 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=lato);
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css);
+/*small symbols*/
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -12,7 +16,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.35);
   -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -43,7 +47,7 @@ nav ul li:hover > ul {
 nav ul li a {
   display: block;
   padding: 30px 20px;
-  color: black;
+  color: #2a2b39;
   font-size: .9em;
   letter-spacing: 1px;
   text-decoration: none;
@@ -71,141 +75,224 @@ nav ul ul li a {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  background-image: url(./pink.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   margin: 0;
-  padding: 2rem;
-  background-color: rgba(131, 109, 97, 0.5);
-}
-
-h1 {
-  margin: 0;
-  font-size: 3.8rem;
-  font-family: 'Lato', sans-serif;
-  color: rgba(0, 0, 0, 0.75);
-}
-
-figure {
-  margin: 0;
-  background: rgba(123, 123, 123, 0.5);
-  -webkit-box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
-          box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
+  padding: 0;
+  z-index: 9;
 }
 
 p {
+  padding: 0;
   margin: 0;
-  padding: 1.8rem;
-  background-color: rgba(123, 123, 123, 0.5);
-  -webkit-box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
-          box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  position: relative;
+  display: inline-block;
 }
 
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
+a {
+  color: #2a2b39;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #e48ad8;
+}
+
+.contactcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 320px;
+  width: 428px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 43px -10px black;
+          box-shadow: 0px 0px 43px -10px black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contactcard .flip {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.contactcard .front {
+  z-index: 11;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.45);
+          box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.45);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.contactcard .front .top {
+  height: 50%;
+  background: #2a2b39;
+}
+
+.contactcard .front .top:after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.contactcard .front .top:after {
+  left: 50%;
+  width: 2em;
+  height: 2em;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  bottom: 9em;
+  z-index: 10;
+  background: inherit;
+}
+
+.contactcard .front .top .logo {
+  display: inline-block;
+  background: #e48ad8;
+  color: #fff;
+  z-index: 11;
+  padding: .16em;
+  border: 8px solid #fff;
+  position: relative;
+  pointer-events: none;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  margin-top: .4em;
+  font-size: 4em;
+}
+
+.contactcard .front .top .logo .initial {
+  font-weight: 800;
+}
+
+.contactcard .front .top .logo .flipped {
+  font-weight: 100;
+}
+
+.contactcard .front .details {
+  margin-top: 2.4em;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  z-index: 8;
+}
+
+.contactcard .front .name {
+  color: #2a2b39;
+  font-weight: 400;
+  font-size: 3.2em;
+  text-align: center;
+  position: relative;
+  margin-bottom: .35em;
+}
+
+.contactcard .front .name:after {
+  content: '';
+  position: absolute;
+  top: 1.3em;
+  width: 20%;
+  left: 40%;
+  right: 40%;
+  height: 1px;
+  background: #2a2b39;
+}
+
+.contactcard .front .introduction {
+  text-align: center;
+  color: #2a2b39;
+  font-family: 'Old Standard TT', serif;
+  font-style: italic;
+}
+
+.contactcard .front .contact {
+  color: #2a2b39;
+  margin-left: 1.7em;
+  font-weight: 300;
+  font-size: 1.6em;
+  -webkit-transform: translateY(400%);
+          transform: translateY(400%);
+}
+
+.contactcard .front .contact span {
+  color: #2D3244;
+  font-size: 1.7em;
+  width: 1.3em;
+  display: inline-block;
+}
+
+.contactcard .front .contact a {
+  position: relative;
+  bottom: .24em;
+}
+
+.contactcard .back {
   width: 100%;
   height: 100%;
-  display: block;
-}
-
-.grid {
-  --verticalPadding: 2rem;
-  --overlap: 6rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 5fr 1fr 4fr 2fr 3fr 3fr 2fr 4fr 1fr 5fr;
-      grid-template-columns: 5fr 1fr 4fr 2fr 3fr 3fr 2fr 4fr 1fr 5fr;
-  -ms-grid-rows: [header-start] auto [fig1-start] 3rem [header-end] minmax(var(--verticalPadding), auto) [p1-start] minmax(0, auto) [p1-end] minmax(var(--verticalPadding), auto) [fig2-start] var(--overlap) [fig1-end] minmax(var(--verticalPadding), auto) [p2-start] minmax(0, auto) [p2-end] minmax(var(--verticalPadding), auto) [fig3-start] var(--overlap) [fig2-end] minmax(var(--verticalPadding), auto) [p3-start] minmax(0, auto) [p3-end] minmax(var(--verticalPadding), auto) [fig3-end];
-      grid-template-rows: [header-start] auto [fig1-start] 3rem [header-end] minmax(var(--verticalPadding), auto) [p1-start] minmax(0, auto) [p1-end] minmax(var(--verticalPadding), auto) [fig2-start] var(--overlap) [fig1-end] minmax(var(--verticalPadding), auto) [p2-start] minmax(0, auto) [p2-end] minmax(var(--verticalPadding), auto) [fig3-start] var(--overlap) [fig2-end] minmax(var(--verticalPadding), auto) [p3-start] minmax(0, auto) [p3-end] minmax(var(--verticalPadding), auto) [fig3-end];
-  grid-auto-rows: minmax(var(--verticalPadding), auto);
-  gap: 1rem;
-  max-width: 75rem;
-  margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.grid::before, .grid::after {
-  content: '';
-  display: block;
-}
-
-header {
-  grid-column: 1 / -2;
-  grid-row: header;
-  padding: 2rem;
-  -webkit-box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
-          box-shadow: -0.035rem 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  text-align: center;
-  background-color: rgba(123, 123, 123, 0.5);
-}
-
-.fig--1 {
-  grid-column: span 5 / -1;
-  grid-row: fig1;
-}
-
-.fig--2 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
-  grid-column: 1 / span 7;
-  grid-row: fig2;
-}
-
-.fig--3 {
-  grid-column: span 5 / -2;
-  grid-row: fig3;
-}
-
-.fig--3 img {
-  -o-object-position: left;
-     object-position: left;
-}
-
-p:first-of-type {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 4;
-  grid-column: 3 / span 4;
-  grid-row: p1;
-  z-index: 1;
-  -webkit-transform: rotate(-1deg);
-          transform: rotate(-1deg);
-}
-
-p:nth-of-type(2) {
-  grid-column: span 3 / -3;
-  grid-row: p2;
-  -webkit-transform: rotate(0.8deg);
-          transform: rotate(0.8deg);
-}
-
-p:nth-of-type(3) {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2 / span 4;
-  grid-row: p3;
-  -webkit-transform: rotate(-0.7deg);
-          transform: rotate(-0.7deg);
-}
-
-[style*="--aspect-ratio"] {
-  position: relative;
-}
-
-[style*="--aspect-ratio"]::before {
-  content: "";
-  display: block;
-  padding-bottom: calc(100% / (var(--aspect-ratio)));
-}
-
-[style*="--aspect-ratio"] > :first-child {
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: absolute;
-  top: 0;
+}
+
+.container {
+  position: absolute;
+  text-align: justify;
+  bottom: 1em;
+  color: #2a2b39;
+  font-weight: 300;
+  padding: .4em;
+  background: white;
+}
+
+/* Hover animation */
+.front .top .logo, .front .top, .front .top:after, .front .details, .front .contact {
+  -webkit-transition: 0.7s all ease-in-out;
+  transition: 0.7s all ease-in-out;
+}
+
+.flip:hover .front .top .logo {
+  margin-top: .28em;
+  font-size: 1.3em;
+  border: 3px solid #fff;
+  margin-left: .15em;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
   left: 0;
-  height: 100%;
+}
+
+.flip:hover .front .top {
+  height: 15%;
+}
+
+.flip:hover .front .top:after {
+  width: 1.5em;
+  height: 1.5em;
+  bottom: 16.3em;
+}
+
+.flip:hover .front .details {
+  -webkit-transform: translateY(400%);
+          transform: translateY(400%);
+}
+
+.flip:hover .front .contact {
+  -webkit-transform: translateY(-52%);
+          transform: translateY(-52%);
 }
 /*# sourceMappingURL=about.css.map */

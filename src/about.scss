@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=lato);
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 @import url(https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css); /*small symbols*/
 $maincolor: #e48ad8;
 $secondarycolor: rgb(42, 43, 57);
@@ -33,7 +32,7 @@ nav ul li{
 }
 
 nav ul li:hover{
-    background: rgba(0,0,0,.05);
+    background: rgba(0,0,0,.5);
 }
 nav ul li:hover > ul{
     display: block;
@@ -65,7 +64,7 @@ nav ul ul li a{
 }
 
 body{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 	background-image: url(./pink.jpg);	
 	background-size: cover;	
 	background-repeat: no-repeat;
@@ -174,7 +173,7 @@ a{
 				background: $secondarycolor;
 			}
 		}
-		.introduction{
+		.position{
 			text-align: center;
 			color: $secondarycolor;
 			font-family: 'Old Standard TT', serif;

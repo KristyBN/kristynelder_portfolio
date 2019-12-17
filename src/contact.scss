@@ -77,11 +77,6 @@ body{
 	padding:0;
 	z-index:9;
 }
-p{
-	padding:0;
-	margin:0;
-	display: inline-block	
-}
 
 a{
 	color: $secondarycolor;
@@ -206,17 +201,6 @@ a{
 	}	
 }
 
-.container{
-	position: absolute;
-	text-align: justify;
-	bottom: 0;
-	width:100%;
-	color:$secondarycolor;;
-	font-weight: 300;
-	padding: .4em;
-	background: white;
-	z-index: 7;
-}
 /* Hover animation */
 
 .front .top .logo, .front .top, .front .top:after, .front .details, .front .contact{
@@ -244,131 +228,3 @@ a{
 .flip:hover .front .contact{
 	transform:translateY(-52%);	
 }  
-.card_body {
-	background-color: #f0f0f0;
-	color: gray;
-	font-family: 'Lato', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	letter-spacing: 0;
-	padding: 1rem;
-	bottom: 0;
-  }
-  
-  img {
-	height: auto;
-	max-width: 100%;
-	vertical-align: middle;
-  }
-  
-  .btn {
-	background-color: rgb(229, 139, 217);
-	border: 1px solid lightgray;
-	color:  rgb(42, 43, 57);
-	padding: 0.5rem;
-	text-transform: uppercase;
-  }
-  
-  .btn_block {
-	display: block;
-	width: 100%;
-  }
-   
-  .cards {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  .cards_item{
-	display: flex;
-	padding: 1rem;
-	@media(min-width: 40rem) {
-	  width: 50%;
-	}
-	@media(min-width: 56rem) {
-	  width: 33.3333%;
-	}
-  }
-  
-  .card {
-	background-color: white;
-	border-radius: 0.25rem;
-	box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	&:hover {
-	  .image {
-		filter: contrast(100%);
-	  }
-	}
-  }
-  
-  .content {
-	display: flex;
-	flex: 1 1 auto;
-	flex-direction: column;
-	padding: 1rem;
-  }
-  
-  .image {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-top-left-radius: 0.25rem;
-	border-top-right-radius: 0.25rem;
-	filter: contrast(70%);
-	overflow: hidden;
-	position: relative;
-	transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
-	&::before {
-	  content: "";
-		display: block;
-	  padding-top: 56.25%; 
-	}
-	@media(min-width: 40rem) {
-	  &::before {
-		padding-top: 66.6%; 
-	  }
-	}
-  }
-  
-  .image_html {
-	background-image: url(./html.png);
-  }
-  
-  .image_css {
-	background-image: url(./css-icon.jpg);
-  }
-  
-  .image_ruby {
-	background-image: url(./ruby-logo.png);
-  }
-  
-  .title {
-	color:  rgb(42, 43, 57);
-	font-size: 1.25rem;
-	font-weight: 300;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-  }
-  
-  .text {
-	flex: 1 1 auto;
-	font-size: 0.875rem;
-	line-height: 1.5;
-	margin-bottom: 1.25rem;
-  }
-  
-
-@media only screen and (max-width: 315px){
-	.contactcard{
-		display: flex;
-		height:300px;
-		width:408px;	
-		overflow: scroll;
-	}
-}

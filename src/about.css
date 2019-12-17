@@ -91,30 +91,6 @@ body {
   padding: 0;
 }
 
-p {
-  padding: 0;
-  margin: 0;
-  display: relative;
-}
-
-h1 {
-  color: #2a2b39;
-}
-
-h2 {
-  color: #2a2b39;
-}
-
-.container {
-  position: relative;
-  text-align: justify;
-  width: 100%;
-  color: #2a2b39;
-  font-weight: 300;
-  padding: .4em;
-  background: rgba(211, 211, 211, 0.5);
-}
-
 .card_body {
   background-color: #f0f0f0;
   color: gray;

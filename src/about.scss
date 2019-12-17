@@ -70,39 +70,10 @@ html {
 
 body{
 	font-family: 'Lato', sans-serif;
-	background-image: url(./pink.jpg);	
-	background-size: cover;	
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	width:100%;
-	height:100%;
-	margin:0;
-	padding:0;
 }
-// p{
-// 	padding:0;
-// 	margin:0;
-// 	display: relative;
-// }
-
-// h1{
-// 	color: $secondarycolor;
-// }
-
-// h2{
-// 	color: $secondarycolor;
-// }
-
-// .container{
-// 	position: relative;
-// 	text-align: justify;
-// 	width:100%;
-// 	color:$secondarycolor;
-// 	font-weight: 300;
-// 	padding: .4em;
-// 	background: rgba(211, 211, 211, .5);
-// }
+h1{
+	color: $secondarycolor;
+}
  
 .card_body {
 	background-color: #f0f0f0;
@@ -122,7 +93,7 @@ body{
   }
   
   .btn {
-	background-color: rgb(229, 139, 217);
+	background-color: rgb(222, 222, 222);
 	border: 1px solid lightgray;
 	color:  rgb(42, 43, 57);
 	padding: 0.5rem;
@@ -206,6 +177,17 @@ body{
   
   .image_ruby {
 	background-image: url(./ruby-logo.png);
+  }
+  .image_about {
+	background-image: url(./pink.jpg);
+  }
+  
+  .image_skills {
+	background-image: url(./flowers.jpg);
+  }
+  
+  .image_experience {
+	background-image: url(./deep_flowers.jpg);
   }
   
   .title {

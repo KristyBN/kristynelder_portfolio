@@ -80,15 +80,10 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  background-image: url(./pink.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+}
+
+h1 {
+  color: #2a2b39;
 }
 
 .card_body {
@@ -109,7 +104,7 @@ img {
 }
 
 .btn {
-  background-color: #e58bd9;
+  background-color: #dedede;
   border: 1px solid lightgray;
   color: #2a2b39;
   padding: 0.5rem;
@@ -223,6 +218,18 @@ img {
 
 .image_ruby {
   background-image: url(./ruby-logo.png);
+}
+
+.image_about {
+  background-image: url(./pink.jpg);
+}
+
+.image_skills {
+  background-image: url(./flowers.jpg);
+}
+
+.image_experience {
+  background-image: url(./deep_flowers.jpg);
 }
 
 .title {

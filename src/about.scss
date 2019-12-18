@@ -33,7 +33,7 @@ nav ul li{
 }
 
 nav ul li:hover{
-    background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,.5);
 }
 nav ul li:hover > ul{
     display: block;
@@ -84,47 +84,47 @@ h1{
 	letter-spacing: 0;
 	padding: 1rem;
 	bottom: 0;
-  }
+}
   
-  img {
+img {
 	height: auto;
 	max-width: 100%;
 	vertical-align: middle;
-  }
-  
-  .btn {
+}
+
+.btn {
 	background-color: rgb(222, 222, 222);
 	border: 1px solid lightgray;
 	color:  rgb(42, 43, 57);
 	padding: 0.5rem;
 	text-transform: uppercase;
-  }
-  
-  .btn_block {
+}
+
+.btn_block {
 	display: block;
 	width: 100%;
-  }
-   
-  .cards {
+}
+
+.cards {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-  }
-  
-  .cards_item{
+}
+
+.cards_item{
 	display: flex;
 	padding: 1rem;
 	@media(min-width: 40rem) {
-	  width: 50%;
+		width: 50%;
 	}
 	@media(min-width: 56rem) {
-	  width: 33.3333%;
+		width: 33.3333%;
 	}
-  }
-  
-  .card {
+}
+
+.card {
 	background-color: white;
 	border-radius: 0.25rem;
 	box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
@@ -132,20 +132,20 @@ h1{
 	flex-direction: column;
 	overflow: hidden;
 	&:hover {
-	  .image {
+		.image {
 		filter: contrast(100%);
-	  }
+		}
 	}
-  }
-  
-  .content {
+}
+
+.content {
 	display: flex;
 	flex: 1 1 auto;
 	flex-direction: column;
 	padding: 1rem;
-  }
-  
-  .image {
+}
+
+.image {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -156,61 +156,51 @@ h1{
 	position: relative;
 	transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
 	&::before {
-	  content: "";
+		content: "";
 		display: block;
-	  padding-top: 56.25%; 
+		padding-top: 56.25%; 
 	}
 	@media(min-width: 40rem) {
-	  &::before {
+		&::before {
 		padding-top: 66.6%; 
-	  }
+		}
 	}
-  }
-  
-  .image_html {
+}
+
+.image_html {
 	background-image: url(./html.png);
-  }
-  
-  .image_css {
+}
+
+.image_css {
 	background-image: url(./css-icon.jpg);
-  }
-  
-  .image_ruby {
+}
+
+.image_ruby {
 	background-image: url(./ruby-logo.png);
-  }
-  .image_about {
+}
+.image_about {
 	background-image: url(./pink.jpg);
-  }
-  
-  .image_skills {
+}
+
+.image_skills {
 	background-image: url(./flowers.jpg);
-  }
-  
-  .image_experience {
+}
+
+.image_experience {
 	background-image: url(./deep_flowers.jpg);
-  }
-  
-  .title {
+}
+
+.title {
 	color:  rgb(42, 43, 57);
 	font-size: 1.25rem;
 	font-weight: 300;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-  }
-  
-  .text {
+}
+
+.text {
 	flex: 1 1 auto;
 	font-size: 0.875rem;
 	line-height: 1.5;
 	margin-bottom: 1.25rem;
-  }
-  
-
-@media only screen and (max-width: 315px){
-	.contactcard{
-		display: flex;
-		height:300px;
-		width:408px;	
-		overflow: scroll;
-	}
 }

@@ -63,6 +63,11 @@ nav ul ul li a{
     padding:15px 30px;
     border-bottom: 1px solid rgba(0,0,0,.05);
 }
+a{
+	&:hover{
+		  color: $maincolor;
+	  }
+  }
 
 html {
 	scroll-behavior: smooth;

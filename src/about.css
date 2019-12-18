@@ -74,6 +74,10 @@ nav ul ul li a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+a:hover {
+  color: #e48ad8;
+}
+
 html {
   scroll-behavior: smooth;
 }

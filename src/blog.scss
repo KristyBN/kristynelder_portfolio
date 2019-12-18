@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=lato);
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+@import url(https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css); /*small symbols*/
+$maincolor: #e48ad8;
+$secondarycolor: rgb(42, 43, 57);
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:rgba(255, 255, 255, .35);
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+	border: 1px solid rgba(0,0,0,.1);
+	z-index: 15;
+}
+nav ul{
+    list-style: none;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    display: inline-table;
+}
+nav ul li{
+    float:left;
+    transition: all .2s ease-in-out;
+}
+
+nav ul li:hover{
+    background: rgba(0,0,0,.5);
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul li a{
+    display: block;
+    padding:30px 20px;
+    color:$secondarycolor;
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul ul{
+    display:none;
+    background: white;
+    position: absolute;
+    top:100%;
+    box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);
+}
+nav ul ul li{
+    float:none;
+    position:relative;
+}
+nav ul ul li a{
+    padding:15px 30px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}

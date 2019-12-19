@@ -16,6 +16,7 @@ nav {
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.65);
+  /*opacity change to others*/
   -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -80,6 +81,7 @@ a:hover {
 
 html {
   scroll-behavior: smooth;
+  /*added scroll*/
 }
 
 body {
@@ -108,6 +110,7 @@ img {
 }
 
 .btn {
+  /*button on language cards*/
   background-color: #dedede;
   border: 1px solid lightgray;
   color: #2a2b39;
@@ -253,6 +256,7 @@ img {
   margin-bottom: 1.25rem;
 }
 
+/*drops cards below menu on smaller screens*/
 @media screen and (max-width: 333px) {
   .card_body {
     padding-top: 130px;

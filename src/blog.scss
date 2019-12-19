@@ -142,7 +142,7 @@ body{
   .date p {
     margin-bottom: 0;
   }
-  
+  /*if live would link*/
   .link {
     position: absolute;
     top: 0;
@@ -150,12 +150,14 @@ body{
     width: 100%;
     z-index: 2;
   }
+  /*stops cards from stretching on larger devices and centres*/
   @media screen and (min-width: 700px) {
     .blog_card{
       width:700px;
       justify-content: center;
     }
   }
+  /*drops cards below menu on smaller screens*/
   @media screen and (max-width: 333px) {
     .blog{
       padding-top: 130px;

@@ -16,6 +16,7 @@ header {
   z-index: 2;
 }
 
+/* video set as background*/
 #myVideo {
   position: fixed;
   right: 0;
@@ -29,6 +30,7 @@ p {
   margin: 0 0 10px 0;
 }
 
+/* start of diamond menu*/
 .clip-svg {
   width: 0;
   height: 0;
@@ -59,6 +61,7 @@ p {
   background-position: bottom;
 }
 
+/* each diamond uses a portion of the flower image. background is over layed*/
 .img-clip-wrap {
   width: 300px;
   height: 300px;
@@ -109,6 +112,7 @@ p {
   display: block;
 }
 
+/* resize diamond menu for smaller devises*/
 @media only screen and (min-width: 650px) {
   .img-clip-row {
     margin-top: -154px;

@@ -48,4 +48,18 @@ The website is also responsive and mobile friendly, even the diamond menu on the
 #### Blog Screen Shot
 ![blogss](docs/blogss.png)
 <br>
+#### Resume Screen Shot
+![resumess](docs/resumess.png)
+<br>
+
+### Target Audience
+The target audience is for the portfolio is potential employers who are looking for someone who likes to experiment and push the design and functionality while maintaining a pleasing and engaging aesthetic while addressing the brief.<br>
+<br>
+### Tech stack
+This portfolio has employed the following tech:<br>
+*   HTML
+*   CSS
+*   Sass
+*   Github
+
 

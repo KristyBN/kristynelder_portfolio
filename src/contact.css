@@ -19,6 +19,7 @@ nav {
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.35);
+  /*opacity change to others*/
   -webkit-box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -40,7 +41,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 nav ul li:hover > ul {

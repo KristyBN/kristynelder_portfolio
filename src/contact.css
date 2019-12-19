@@ -276,4 +276,11 @@ a:hover {
   -webkit-transform: translateY(-52%);
           transform: translateY(-52%);
 }
+
+@media screen and (max-width: 428px) {
+  body {
+    background-image: none;
+    background-color: #e48ad8;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

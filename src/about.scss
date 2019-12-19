@@ -209,3 +209,13 @@ img {
 	line-height: 1.5;
 	margin-bottom: 1.25rem;
 }
+@media screen and (max-width: 333px) {
+    .card_body{
+      padding-top: 130px;
+    }
+  }
+    @media screen and (max-width: 515px) {
+    .card_body{
+      padding-top: 154px;
+    }
+  }

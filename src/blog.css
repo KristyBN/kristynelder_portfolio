@@ -182,4 +182,16 @@ body {
             justify-content: center;
   }
 }
+
+@media screen and (max-width: 333px) {
+  .blog {
+    padding-top: 130px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .blog {
+    padding-top: 154px;
+  }
+}
 /*# sourceMappingURL=blog.css.map */
